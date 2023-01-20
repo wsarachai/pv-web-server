@@ -61,7 +61,7 @@
     "styled-components": "^5.0.0"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "start:local": "env-cmd .env.local react-scripts start",
     "start:develop": "env-cmd .env.develop react-scripts start",
     "build": "react-scripts --openssl-legacy-provider build",
