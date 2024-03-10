@@ -9,18 +9,18 @@ import 'antd/dist/antd.css'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter } from 'react-router-dom'
-const { store , persistor } = configureStore()
+const { store, persistor } = configureStore()
 const target = document.querySelector('#root')
 
 render(
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter basename="/">
-          <Suspense fallback={null}>
-            <App/>
-          </Suspense>
-        </BrowserRouter>
-      </PersistGate>
-    </Provider>,
-    target
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <BrowserRouter basename="/">
+        <Suspense fallback={null}>
+          <App />
+        </Suspense>
+      </BrowserRouter>
+    </PersistGate>
+  </Provider>,
+  target
 )
